@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contactez Blue Bloom - Une initiative pour apporter de l'eau potable dans les zones rurales du Maroc.">
+    <meta name="keywords" content="Blue Bloom, contact, projets humanitaires, Maroc">
+    <meta name="author" content="Blue Bloom">
+    <title>Contact - Blue Bloom</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: black;
+        }
+
+        /* HEADER */
+        .menu {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 10px 20px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .menu a {
+            color: #007BFF;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 0 15px;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .menu a:hover {
+            color: #0056b3;
+            transform: scale(1.1);
+        }
+
+        /* SECTION CONTACT */
+        .contact-section {
+            padding: 100px 30px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .contact-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #007BFF;
+        }
+
+        .contact-section p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .contact-container {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-form, .contact-info {
+            flex: 1 1 45%;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .contact-form .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .contact-form .form-group input,
+        .contact-form .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form .form-group textarea {
+            resize: none;
+        }
+
+        .contact-form .btn-submit {
+            background-color: #007BFF;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form .btn-submit:hover {
+            background-color: #0056b3;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .contact-info a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .map-container {
+            margin-top: 30px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 400px;
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+       /* Footer */
+        .footer {
+            background-color: #001a33;
+            color: #ffffff;
+            padding: 40px 30px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-column ul {
+            list-style: none;
+            margin: 10px 0;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            gap: 10px;
+        }
+
+        .footer h3,
+        .footer ul a {
+            color: white;
+        }
+
+        .footer ul a:hover {
+            color: #007BFF;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .social-icons a img {
+            width: 60%;
+            height: 60%;
+        }
+
+        .social-icons a:hover {
+            background-color: #007BFF;
+            transform: scale(1.1);
+        }
+
+        .footer-bottom {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="menu">
+        <a href="accueil.html">Accueil</a>
+        <a href="realisations.html">Réalisations</a>
+        <a href="temoignages.html">Témoignages</a>
+        <a href="equipe.html">Équipe</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Section Contact -->
+    <section class="contact-section">
+        <h1>Contactez-nous</h1>
+        <p>Vous avez une question ou une demande ? Remplissez le formulaire ci-dessous ou contactez-nous directement via nos coordonnées.</p>
+        
+        <div class="contact-container">
+            <!-- Formulaire -->
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Nom complet</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Adresse email</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Votre message" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Envoyer</button>
+            </form>
+
+            <!-- Coordonnées -->
+            <div class="contact-info">
+                <h3>Nos coordonnées</h3>
+                <p>Email : <a href="mailto:bluebloom.aliance@gmail.com">bluebloom.aliance@gmail.com</a></p>
+                <p>Téléphone : <a href="tel:+212773667230">+212 773 667 230</a></p>
+                <p>Adresse : Rabat, Avenue Mohammed 6, km 8,5</p>
+            </div>
+        </div>
+
+        <!-- Carte -->
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.333031938601!2d-6.852790585180023!3d33.97266768063432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76c3e1e6f1ab9%3A0x8b40d739f1d9919b!2sRabat%2C%20Avenue%20Mohammed%206%2C%20km%208%2C5!5e0!3m2!1sfr!2sma!4v1690835154218!5m2!1sfr!2sma" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Plan du site</h3>
+                <ul>
+                    <li><a href="accueil.html">Accueil</a></li>
+                    <li><a href="realisations.html">Réalisations</a></li>
+                    <li><a href="temoignages.html">Témoignages</a></li>
+                    <li><a href="equipe.html">Équipe</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Réseaux sociaux</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/bluebloom.ma/" target="_blank">
+                        <img src="instagram.png" alt="Instagram">
+                    </a>
+                    <a href="https://www.tiktok.com/@bluebloom.ma" target="_blank">
+                        <img src="tiktok.png" alt="TikTok">
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <img src="twitter.png" alt="Twitter">
+                         <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <img src="linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Blue Bloom. Tous droits réservés.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
